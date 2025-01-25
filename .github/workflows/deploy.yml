@@ -17,4 +17,4 @@ jobs:
 
       - name: Flash ESP32
         run: |
-          python -m esptool --chip esp32 --port COM3 --baud 115200 write_flash -z 0x1000 firmware/firmware.bin
+          python -m esptool --chip esp32 --port COM3 --baud 115200 write_flash -z 0x1000 .pio/build/esp32dev/firmware.bin
